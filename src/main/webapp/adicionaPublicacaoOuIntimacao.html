@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Publicacao ou Intimacao</title>
+</head>
+<body>
+<form action="controladoraPublicacao?acao=AdicionaPublicacoes" method="POST">
+  <label>Tipo:
+    <input type="checkbox" name="tipo" value="publicacao"> Publicação
+    <input type="checkbox" name="tipo" value="intimacao"> Intimação
+  </label><br>
+  Data: <input type="date" name="data"><br>
+  Número do Processo: <input type="number" name="numeroProcesso"><br>
+  Texto: <input type="text" name="texto"><br>
+  <input type="hidden" name="acaoPublicacoes" value="AdicionaPublicacoes">
+  <input type="submit" value="Enviar">
+</form>
+</body>
+</html>

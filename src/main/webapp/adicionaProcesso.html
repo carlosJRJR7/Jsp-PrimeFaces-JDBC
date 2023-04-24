@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Processos</title>
+</head>
+<body>
+  <form action="controladoraProcesso?acao=AdicionaProcessos" method="POST">
+    Numero do Processo:<input type="number" name="numeroProcesso"></br>
+    ID do cliente:<input type="number" name="idCliente"></br>
+      <input type="hidden" name="AcaoProcessos" value="AdicionaProcessos">
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
